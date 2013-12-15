@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Surviving Support: 10 Tips for Saving Your Users and Yourself</title>
+
+    <meta name="description" content="When I open sourced my plugin to the WordPress community, user support was one of the last things on my mind - I was more excited to have written awesome code and a helpful site extension. Shortly thereafter though, customer support was the only thing I had time for.  When your user base ranges in skill level from experienced developer to your grandmother, well… you've gotta be prepared for just about anything.  This session will highlight the challenges and benefits of stellar support and offer a few tricks to make the process as painless as possible for both your user and yourself.">
+
+    <meta name="author" content="Julie Cameron">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+    <link rel="stylesheet" href="css/theme/support.css" id="theme">
+    <link rel="stylesheet" href="css/print/pdf.css" media="print">
+
+    <script src="lib/js/head.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <!-- Intro -->
+        <section>
+          <div class="box">
+            <h1><strong>Surviving Support</strong></h1>
+            <h4>10 Tips for Saving Your Users and Yourself</h4>
+            <aside class="notes">
+            </aside>
+          </div>
+        </section>
+
+        <!-- About Me -->
+        <section>
+          <h2>Julie Cameron</h2>
+
+          <p class="box"><small><a href="http://juliecameron.com" target="_blank">JulieCameron.com</a> | <a href="http://twitter.com/jewlofthelotus" target="_blank">@JewlOfTheLotus</a> | <a href="mailto:jewlofthelotus@gmail.com">jewlofthelotus@gmail.com</a></small></p>
+
+          <div class="right box">
+            <img src="images/julie.jpg" />
+          </div>
+
+          <ul class="left">
+            <li><strong>Remote Frontender</strong> for <a href="http://articlate.com" target="_blank">Articulate</a></li>
+            <li><strong><a href="https://github.com/jewlofthelotus/SlickQuiz" target="_blank">Open</a> <a href="http://wordpress.org/plugins/slickquiz" target="_blank">Source</a></strong> JS &amp; WP Developer</li>
+            <li><strong>Sassy CSS</strong> Fan</li>
+            <li><strong>Modular Architecture</strong> Proponent</li>
+            <li><strong>Responsive Web Design</strong> Advocate</li>
+          </ul>
+
+          <aside class="notes">
+            <ul>
+              <li>Working Remote</li>
+              <li>SlickQuiz</li>
+              <li>Full Time Sass for 1 year</li>
+            </ul>
+          </aside>
+        </section>
+
+      </div>
+
+      <footer>
+        <div class="copyright">
+          #SurvivingSupport ~ CodeMash 2014 ~
+          <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US">
+            <img alt="Creative Commons License" style="border-width:0" src="images/cc.png" />
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        rollingLinks: true,
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+    </script>
+  </body>
+</html>
