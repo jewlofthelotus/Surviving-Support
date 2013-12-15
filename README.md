@@ -1,4 +1,4 @@
-SassShop
+Surviving Support
 ========
 
-I don't know about you, but vanilla CSS always leaves me wanting more.  It's a fairly simple language, can do some pretty powerful things, but after a while.. well, it can become rather tedious to work with.  Enter Sass: Syntactically Awesome Stylesheets.  Sass is a CSS meta-language and precompiler that makes the prettification of your website a breeze by adding invaluable features of more traditional programming languages.  In this workshop, we'll jump right in to the Sass workflow and cover all the key game changers - nesting, variables, mixins, inheritance, and directives.  We'll also cover some of the gotchyas, tools and extensions, and tips on organization and coding standards.
+When I open sourced my plugin to the WordPress community, user support was one of the last things on my mind - I was more excited to have written awesome code and a helpful site extension. Shortly thereafter though, customer support was the only thing I had time for.  When your user base ranges in skill level from experienced developer to your grandmother, well… you've gotta be prepared for just about anything.  This session will highlight the challenges and benefits of stellar support and offer a few tricks to make the process as painless as possible for both your user and yourself.
