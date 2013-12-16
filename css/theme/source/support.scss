@@ -1,5 +1,8 @@
 /**
- * Blood theme for reveal.js
+ * Support theme for reveal.js
+ * Author: Julie Cameron http://juliecameron.com
+ *
+ * Based off Blood theme for reveal.js
  * Author: Walther http://github.com/Walther
  *
  * Designed to be used with highlight.js theme
@@ -9,6 +12,8 @@
  * For other themes, change $codeBackground accordingly.
  *
  */
+
+@import "compass";
 
  // Default mixins and settings -----------------
 @import "../template/mixins";
@@ -24,18 +29,18 @@ $blood: #a23;
 $coal: #222;
 $codeBackground: #23241f;
 
+$backgroundColor: #fefefe;
+$headingColor: $blood;
+
 // Main text
 $mainFont: Ubuntu, 'sans-serif';
 $mainFontSize: 36px;
-$mainColor: #eee;
+$mainColor: #222;
 
 // Headings
 $headingFont: Ubuntu, 'sans-serif';
 $headingTextShadow: 2px 2px 2px $coal;
-
-// h1 shadow, borrowed humbly from
-// (c) Default theme by Hakim El Hattab
-$heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
+$headingTextTransform: none;
 
 // Links
 $linkColor: $blood;
@@ -45,10 +50,6 @@ $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: $blood;
 $selectionColor: #fff;
 
-// Background generator
-@mixin bodyBackground() {
-    @include radial-gradient( $coal, lighten( $coal, 25% ) );
-}
 
 // Theme template ------------------------------
 @import "../template/theme";
@@ -75,6 +76,15 @@ $selectionColor: #fff;
     text-shadow: 2px 2px 2px #000;
 }
 
+.reveal li {
+  margin-bottom: .5em;
+}
+
+.reveal small {
+  color: #aaa;
+  letter-spacing: 1px;
+}
+
 .reveal small a:not(.image),
 .reveal small a:not(.image):hover {
     text-shadow: 1px 1px 1px #000;
@@ -88,4 +98,44 @@ $selectionColor: #fff;
 
 .reveal small code {
     vertical-align: baseline;
+}
+
+
+/*********************************************
+* OVERRIDES
+**********************************************/
+.reveal {
+  .left-align{text-align:left}
+  .right-align{ text-align:right}
+  .left{float:left}
+  .right{float:right}
+  .clear{clear:both}
+
+  .box {padding: 1em 0;}
+  .box--short {padding: .5em 0;}
+  .box--huge {padding: 3em 0;}
+
+  .blue{color:#01A9B4 !important;}
+  .green{color:#92BB44 !important;}
+  .yellow{color:#EDAB23 !important;}
+  .pink{color:#F05B62 !important;}
+  .red{color: $blood !important;}
+}
+
+/*********************************************
+ * FOOTER
+ *********************************************/
+.reveal {
+  footer {
+    @include box-sizing(border-box);
+    color: #888;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+    font-size: 35%;
+    text-align: right;
+    letter-spacing: 2px;
+    padding: 0 2em;
+  }
 }
