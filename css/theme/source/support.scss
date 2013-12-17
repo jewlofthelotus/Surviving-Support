@@ -14,6 +14,7 @@
  */
 
 @import "compass";
+@import "lib/font-awesome/font-awesome";
 
  // Default mixins and settings -----------------
 @import "../template/mixins";
@@ -146,6 +147,12 @@ $selectionColor: #fff;
   .yellow{color:#EDAB23 !important;}
   .pink{color:#F05B62 !important;}
   .red{color: $blood !important;}
+  .grey{color: #888 !important;}
+
+  a:hover i {
+    @include transform(scale(1.25));
+    @extend .green;
+  }
 }
 
 /*********************************************
