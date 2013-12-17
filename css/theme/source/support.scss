@@ -55,6 +55,15 @@ $selectionColor: #fff;
 @import "../template/theme";
 // ---------------------------------------------
 
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
 // some overrides after theme template import
 
 .reveal p {
@@ -111,9 +120,26 @@ $selectionColor: #fff;
   .right{float:right}
   .clear{clear:both}
 
+  .copy--small {font-size: .75em;}
+
   .box {padding: 1em 0;}
   .box--short {padding: .5em 0;}
   .box--huge {padding: 3em 0;}
+
+  .tip {
+    @extend %clearfix;
+    background: #efefef;
+    display: block;
+    margin-bottom: .5em;
+    padding: .25em;
+    text-align: left;
+
+    span {
+      display: inline-block;
+      font-size: .7em;
+      float: right;
+    }
+  }
 
   .blue{color:#01A9B4 !important;}
   .green{color:#92BB44 !important;}

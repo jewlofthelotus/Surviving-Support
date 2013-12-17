@@ -185,13 +185,20 @@ body {
   color: #aa2233;
 }
 
-/* line 60, source/support.scss */
+/* line 59, source/support.scss */
+.reveal .tip:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 69, source/support.scss */
 .reveal p {
   font-weight: 300;
   text-shadow: 1px 1px #222222;
 }
 
-/* line 65, source/support.scss */
+/* line 74, source/support.scss */
 .reveal h1,
 .reveal h2,
 .reveal h3,
@@ -201,37 +208,37 @@ body {
   font-weight: 700;
 }
 
-/* line 74, source/support.scss */
+/* line 83, source/support.scss */
 .reveal a:not(.image),
 .reveal a:not(.image):hover {
   text-shadow: 2px 2px 2px #000;
 }
 
-/* line 79, source/support.scss */
+/* line 88, source/support.scss */
 .reveal li {
   margin-bottom: .5em;
 }
 
-/* line 83, source/support.scss */
+/* line 92, source/support.scss */
 .reveal small {
   color: #aaa;
   letter-spacing: 1px;
 }
 
-/* line 88, source/support.scss */
+/* line 97, source/support.scss */
 .reveal small a:not(.image),
 .reveal small a:not(.image):hover {
   text-shadow: 1px 1px 1px #000;
 }
 
-/* line 93, source/support.scss */
+/* line 102, source/support.scss */
 .reveal p code {
   background-color: #23241f;
   display: inline-block;
   border-radius: 7px;
 }
 
-/* line 99, source/support.scss */
+/* line 108, source/support.scss */
 .reveal small code {
   vertical-align: baseline;
 }
@@ -239,55 +246,73 @@ body {
 /*********************************************
 * OVERRIDES
 **********************************************/
-/* line 108, source/support.scss */
+/* line 117, source/support.scss */
 .reveal .left-align {
   text-align: left;
 }
-/* line 109, source/support.scss */
+/* line 118, source/support.scss */
 .reveal .right-align {
   text-align: right;
 }
-/* line 110, source/support.scss */
+/* line 119, source/support.scss */
 .reveal .left {
   float: left;
 }
-/* line 111, source/support.scss */
+/* line 120, source/support.scss */
 .reveal .right {
   float: right;
 }
-/* line 112, source/support.scss */
+/* line 121, source/support.scss */
 .reveal .clear {
   clear: both;
 }
-/* line 114, source/support.scss */
+/* line 123, source/support.scss */
+.reveal .copy--small {
+  font-size: .75em;
+}
+/* line 125, source/support.scss */
 .reveal .box {
   padding: 1em 0;
 }
-/* line 115, source/support.scss */
+/* line 126, source/support.scss */
 .reveal .box--short {
   padding: .5em 0;
 }
-/* line 116, source/support.scss */
+/* line 127, source/support.scss */
 .reveal .box--huge {
   padding: 3em 0;
 }
-/* line 118, source/support.scss */
+/* line 129, source/support.scss */
+.reveal .tip {
+  background: #efefef;
+  display: block;
+  margin-bottom: .5em;
+  padding: .25em;
+  text-align: left;
+}
+/* line 137, source/support.scss */
+.reveal .tip span {
+  display: inline-block;
+  font-size: .7em;
+  float: right;
+}
+/* line 144, source/support.scss */
 .reveal .blue {
   color: #01A9B4 !important;
 }
-/* line 119, source/support.scss */
+/* line 145, source/support.scss */
 .reveal .green {
   color: #92BB44 !important;
 }
-/* line 120, source/support.scss */
+/* line 146, source/support.scss */
 .reveal .yellow {
   color: #EDAB23 !important;
 }
-/* line 121, source/support.scss */
+/* line 147, source/support.scss */
 .reveal .pink {
   color: #F05B62 !important;
 }
-/* line 122, source/support.scss */
+/* line 148, source/support.scss */
 .reveal .red {
   color: #aa2233 !important;
 }
@@ -295,7 +320,7 @@ body {
 /*********************************************
  * FOOTER
  *********************************************/
-/* line 129, source/support.scss */
+/* line 155, source/support.scss */
 .reveal footer {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
