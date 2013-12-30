@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);
 /**
  * Support theme for reveal.js
  * Author: Julie Cameron http://juliecameron.com
@@ -2154,6 +2153,18 @@
   content: "\f196";
 }
 
+@font-face {
+  font-family: "Ubuntu";
+  src: local("Ubuntu"), url("../../fonts/Ubuntu/Ubuntu-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: local("Ubuntu-Bold"), url("../../fonts/Ubuntu/Ubuntu-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold;
+}
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -2175,7 +2186,7 @@ body {
 /* line 20, template/theme.scss */
 ::selection {
   color: white;
-  background: #aa2233;
+  background: #f05b62;
   text-shadow: none;
 }
 
@@ -2191,7 +2202,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #aa2233;
-  font-family: Ubuntu, "sans-serif";
+  font-family: Ubuntu-Bold, "sans-serif";
   line-height: 0.9em;
   letter-spacing: 0.02em;
   text-transform: none;
@@ -2326,104 +2337,118 @@ body {
   color: #aa2233;
 }
 
-/* line 60, source/support.scss */
-.reveal .tip:after {
+/* line 82, source/support.scss */
+.reveal [class*="box"]:after, .reveal .tip:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 70, source/support.scss */
+/* line 93, source/support.scss */
+.reveal strong {
+  font-family: Ubuntu-Bold, "sans-serif";
+}
+/* line 97, source/support.scss */
 .reveal p {
-  font-weight: 300;
+  letter-spacing: 0.001em;
   text-shadow: 1px 1px #222222;
 }
-
-/* line 75, source/support.scss */
-.reveal h1,
-.reveal h2,
-.reveal h3,
-.reveal h4,
-.reveal h5,
-.reveal h6 {
-  font-weight: 700;
-}
-
-/* line 84, source/support.scss */
+/* line 102, source/support.scss */
 .reveal a:not(.image),
 .reveal a:not(.image):hover {
-  text-shadow: 2px 2px 2px #000;
+  text-shadow: 2px 2px 2px #222222;
 }
-
-/* line 89, source/support.scss */
-.reveal li {
-  margin-bottom: .5em;
-}
-
-/* line 93, source/support.scss */
+/* line 107, source/support.scss */
 .reveal small {
   color: #aaa;
   letter-spacing: 1px;
 }
-
-/* line 98, source/support.scss */
+/* line 111, source/support.scss */
 .reveal small a:not(.image),
 .reveal small a:not(.image):hover {
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px 1px #222222;
 }
-
-/* line 103, source/support.scss */
-.reveal p code {
-  background-color: #23241f;
-  display: inline-block;
-  border-radius: 7px;
-}
-
-/* line 109, source/support.scss */
-.reveal small code {
-  vertical-align: baseline;
+/* line 117, source/support.scss */
+.reveal li {
+  margin-bottom: .5em;
 }
 
 /*********************************************
-* OVERRIDES
+* Custom Classes
 **********************************************/
-/* line 118, source/support.scss */
-.reveal .left-align {
+/* line 127, source/support.scss */
+.reveal .left--align {
   text-align: left;
 }
-/* line 119, source/support.scss */
-.reveal .right-align {
+/* line 128, source/support.scss */
+.reveal .right--align {
   text-align: right;
 }
-/* line 120, source/support.scss */
+/* line 130, source/support.scss */
 .reveal .left {
   float: left;
 }
-/* line 121, source/support.scss */
+/* line 131, source/support.scss */
 .reveal .right {
   float: right;
 }
-/* line 122, source/support.scss */
+/* line 133, source/support.scss */
 .reveal .clear {
   clear: both;
 }
-/* line 124, source/support.scss */
+/* line 134, source/support.scss */
+.reveal .hide {
+  display: none;
+}
+/* line 136, source/support.scss */
+.reveal .blue {
+  color: #01a9b4 !important;
+}
+/* line 137, source/support.scss */
+.reveal .green {
+  color: #92bb44 !important;
+}
+/* line 138, source/support.scss */
+.reveal .yellow {
+  color: #edab23 !important;
+}
+/* line 139, source/support.scss */
+.reveal .pink {
+  color: #f05b62 !important;
+}
+/* line 140, source/support.scss */
+.reveal .red {
+  color: #aa2233 !important;
+}
+/* line 141, source/support.scss */
+.reveal .grey {
+  color: #888888 !important;
+}
+/* line 143, source/support.scss */
 .reveal .copy--small {
   font-size: .75em;
 }
-/* line 126, source/support.scss */
+/* line 144, source/support.scss */
+.reveal .line--tall {
+  line-height: 1.25em;
+}
+/* line 147, source/support.scss */
 .reveal .box {
   padding: 1em 0;
 }
-/* line 127, source/support.scss */
+/* line 148, source/support.scss */
 .reveal .box--short {
   padding: .5em 0;
 }
-/* line 128, source/support.scss */
+/* line 149, source/support.scss */
+.reveal .box--med {
+  padding: 2em 0;
+}
+/* line 150, source/support.scss */
 .reveal .box--huge {
   padding: 3em 0;
 }
-/* line 130, source/support.scss */
+/* line 152, source/support.scss */
 .reveal .tip {
   background: #efefef;
   display: block;
@@ -2431,49 +2456,23 @@ body {
   padding: .25em;
   text-align: left;
 }
-/* line 138, source/support.scss */
+/* line 160, source/support.scss */
 .reveal .tip span {
   display: inline-block;
   font-size: .7em;
   float: right;
 }
-/* line 145, source/support.scss */
-.reveal .blue {
-  color: #01A9B4 !important;
-}
-/* line 146, source/support.scss */
-.reveal .green, .reveal a:hover i {
-  color: #92BB44 !important;
-}
-/* line 147, source/support.scss */
-.reveal .yellow {
-  color: #EDAB23 !important;
-}
-/* line 148, source/support.scss */
-.reveal .pink {
-  color: #F05B62 !important;
-}
-/* line 149, source/support.scss */
-.reveal .red {
-  color: #aa2233 !important;
-}
-/* line 150, source/support.scss */
-.reveal .grey {
-  color: #888 !important;
-}
-/* line 152, source/support.scss */
-.reveal a:hover i {
-  -moz-transform: scale(1.25);
-  -ms-transform: scale(1.25);
-  -o-transform: scale(1.25);
-  -webkit-transform: scale(1.25);
-  transform: scale(1.25);
+/* line 167, source/support.scss */
+.reveal .plan {
+  border: 20px solid #000;
+  border-top: 30px solid #000;
+  border-bottom: 30px solid #000;
 }
 
 /*********************************************
  * FOOTER
  *********************************************/
-/* line 162, source/support.scss */
+/* line 178, source/support.scss */
 .reveal footer {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
