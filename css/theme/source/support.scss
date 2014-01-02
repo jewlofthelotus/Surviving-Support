@@ -149,6 +149,11 @@ $selectionColor: $white;
   .box--med {padding: 2em 0;}
   .box--huge {padding: 3em 0;}
 
+  .list--tight {
+    margin-top: .5em;
+    li  {margin-bottom: 0;}
+  }
+
   .tip {
     @extend %clearfix;
     background: #efefef;
