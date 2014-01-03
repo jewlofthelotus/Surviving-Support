@@ -142,6 +142,9 @@ $selectionColor: $white;
 
   .copy--small {font-size: .75em;}
   .line--tall {line-height: 1.25em;}
+  .spacing--wide {letter-spacing: 3px;}
+
+  .img--bare {@include box-shadow(none); border: none; margin: 0; padding: 0;}
 
   [class*="box"] {@extend %clearfix;}
   .box {padding: 1em 0;}
@@ -173,6 +176,17 @@ $selectionColor: $white;
     border: 20px solid #000;
     border-top: 30px solid #000;
     border-bottom: 30px solid #000;
+  }
+
+  .copyright a {
+    color: $grey;
+    text-shadow: none;
+    position: relative;
+    z-index: 10000;
+
+    &:hover {
+      text-shadow: none;
+    }
   }
 }
 
