@@ -93,8 +93,11 @@
   .grey {color: $grey !important;}
 
   .copy--small {font-size: .75em;}
+  .copy--xsmall {font-size: .5em;}
+  .line--short {line-height: 1em;}
   .line--tall {line-height: 1.25em;}
   .spacing--wide {letter-spacing: 3px;}
+  .no-margin {margin: 0;}
 
   .img--bare {@include box-shadow(none); border: none; margin: 0; padding: 0;}
 
@@ -103,6 +106,7 @@
   .box--short {padding: .5em 0;}
   .box--med {padding: 2em 0;}
   .box--huge {padding: 3em 0;}
+  .box--bottom {padding: 0 0 .5em;}
 
   .list--tight {
     margin-top: .5em;

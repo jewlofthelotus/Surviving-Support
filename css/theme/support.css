@@ -2447,14 +2447,26 @@ body {
   font-size: .75em;
 }
 /* line 96, source/base/_theme.scss */
+.reveal .copy--xsmall {
+  font-size: .5em;
+}
+/* line 97, source/base/_theme.scss */
+.reveal .line--short {
+  line-height: 1em;
+}
+/* line 98, source/base/_theme.scss */
 .reveal .line--tall {
   line-height: 1.25em;
 }
-/* line 97, source/base/_theme.scss */
+/* line 99, source/base/_theme.scss */
 .reveal .spacing--wide {
   letter-spacing: 3px;
 }
-/* line 99, source/base/_theme.scss */
+/* line 100, source/base/_theme.scss */
+.reveal .no-margin {
+  margin: 0;
+}
+/* line 102, source/base/_theme.scss */
 .reveal .img--bare {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -2463,31 +2475,35 @@ body {
   margin: 0;
   padding: 0;
 }
-/* line 102, source/base/_theme.scss */
+/* line 105, source/base/_theme.scss */
 .reveal .box {
   padding: 1em 0;
 }
-/* line 103, source/base/_theme.scss */
+/* line 106, source/base/_theme.scss */
 .reveal .box--short {
   padding: .5em 0;
 }
-/* line 104, source/base/_theme.scss */
+/* line 107, source/base/_theme.scss */
 .reveal .box--med {
   padding: 2em 0;
 }
-/* line 105, source/base/_theme.scss */
+/* line 108, source/base/_theme.scss */
 .reveal .box--huge {
   padding: 3em 0;
 }
-/* line 107, source/base/_theme.scss */
+/* line 109, source/base/_theme.scss */
+.reveal .box--bottom {
+  padding: 0 0 .5em;
+}
+/* line 111, source/base/_theme.scss */
 .reveal .list--tight {
   margin-top: .5em;
 }
-/* line 109, source/base/_theme.scss */
+/* line 113, source/base/_theme.scss */
 .reveal .list--tight li {
   margin-bottom: 0;
 }
-/* line 112, source/base/_theme.scss */
+/* line 116, source/base/_theme.scss */
 .reveal .tip {
   background: #efefef;
   display: block;
@@ -2495,26 +2511,26 @@ body {
   padding: .25em;
   text-align: left;
 }
-/* line 120, source/base/_theme.scss */
+/* line 124, source/base/_theme.scss */
 .reveal .tip span {
   display: inline-block;
   font-size: .7em;
   float: right;
 }
-/* line 127, source/base/_theme.scss */
+/* line 131, source/base/_theme.scss */
 .reveal .plan {
   border: 20px solid #000;
   border-top: 30px solid #000;
   border-bottom: 30px solid #000;
 }
-/* line 133, source/base/_theme.scss */
+/* line 137, source/base/_theme.scss */
 .reveal .copyright a {
   color: #888888;
   text-shadow: none;
   position: relative;
   z-index: 10000;
 }
-/* line 139, source/base/_theme.scss */
+/* line 143, source/base/_theme.scss */
 .reveal .copyright a:hover {
   text-shadow: none;
 }
