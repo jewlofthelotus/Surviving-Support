@@ -1,0 +1,4 @@
+// Generates the presentation background
+@mixin bodyBackground() {
+  background: $backgroundColor;
+}

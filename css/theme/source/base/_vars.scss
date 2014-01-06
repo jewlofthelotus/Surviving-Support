@@ -1,0 +1,35 @@
+// Colors used in the theme
+$blue:   #01A9B4;
+$green:  #92BB44;
+$yellow: #EDAB23;
+$pink:   #F05B62;
+$red:    #aa2233;
+$grey:   #888888;
+$coal:   #222222;
+$white:  #ffffff;
+
+$backgroundColor: #fefefe;
+$headingColor: $red;
+
+// Main text
+$mainFont: Ubuntu, 'sans-serif';
+$mainFontSize: 36px;
+$mainColor: $coal;
+
+// Headings
+$headingFont: Ubuntu-Bold, 'sans-serif';
+$headingColor: $red;
+$headingTextShadow: 2px 2px 2px $coal;
+$headingTextTransform: none;
+$headingMargin: 0 0 20px 0;
+$headingLineHeight: 0.9em;
+$headingLetterSpacing: 0.02em;
+$heading1TextShadow: $headingTextShadow;
+
+// Links
+$linkColor: $red;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: $pink;
+$selectionColor: $white;
