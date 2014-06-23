@@ -11,8 +11,8 @@
    beyond the edge of the printed page, and prevents
    unnecessary background images from printing */
 body {
-	background: #fff;
-	font-size: 13pt;
+	/*background: #fff;
+	font-size: 13pt;*/
 	width: auto;
 	height: auto;
 	border: 0;
@@ -22,7 +22,7 @@ body {
 	overflow: visible;
 }
 html {
-	background: #fff;
+	/*background: #fff;*/
 	width: auto;
 	height: auto;
 	overflow: visible;
@@ -42,16 +42,17 @@ html {
 
 /* SECTION 3: Set body font face, size, and color.
    Consider using a serif font for readability. */
-body, p, td, li, div, a {
+/*body, p, td, li, div, a {
 	font-size: 16pt!important;
 	font-family: Georgia, "Times New Roman", Times, serif !important;
 	color: #000;
 }
+*/
 
 /* SECTION 4: Set heading font face, sizes, and color.
    Differentiate your headings from your body text.
    Perhaps use a large sans-serif for distinction. */
-h1,h2,h3,h4,h5,h6 {
+/*h1,h2,h3,h4,h5,h6 {
 	color: #000!important;
 	height: auto;
 	line-height: normal;
@@ -60,24 +61,24 @@ h1,h2,h3,h4,h5,h6 {
 	text-align: left;
 	letter-spacing: normal;
 }
-/* Need to reduce the size of the fonts for printing */
-h1 { font-size: 26pt !important;  }
+*//* Need to reduce the size of the fonts for printing */
+/*h1 { font-size: 26pt !important;  }
 h2 { font-size: 22pt !important; }
 h3 { font-size: 20pt !important; }
 h4 { font-size: 20pt !important; font-variant: small-caps; }
 h5 { font-size: 19pt !important; }
 h6 { font-size: 18pt !important; font-style: italic; }
-
+*/
 /* SECTION 5: Make hyperlinks more usable.
    Ensure links are underlined, and consider appending
    the URL to the end of the link for usability. */
-a:link,
+/*a:link,
 a:visited {
 	color: #000 !important;
 	font-weight: bold;
 	text-decoration: underline;
 }
-/*
+*//*
 .reveal a:link:after,
 .reveal a:visited:after {
 	content: " (" attr(href) ") ";
@@ -88,7 +89,7 @@ a:visited {
 
 
 /* SECTION 6: more reveal.js specific additions by @skypanther */
-ul, ol, div, p {
+/*ul, ol, div, p {
 	visibility: visible;
 	position: static;
 	width: auto;
@@ -98,6 +99,7 @@ ul, ol, div, p {
 	margin: auto;
 	text-align: left !important;
 }
+*/
 .reveal .slides {
 	position: static;
 	width: auto;
@@ -123,12 +125,13 @@ ul, ol, div, p {
 	    -ms-perspective-origin: 50% 50%;
 	        perspective-origin: 50% 50%;
 }
+
 .reveal .slides>section,
 .reveal .slides>section>section {
 
 	visibility: visible !important;
 	position: static !important;
-	width: 90% !important;
+	width: auto !important;
 	height: auto !important;
 	display: block !important;
 	overflow: visible !important;
@@ -137,7 +140,7 @@ ul, ol, div, p {
 	top: 0% !important;
 	margin-left: 0px !important;
 	margin-top: 0px !important;
-	padding: 20px 0px !important;
+	padding: 100px 0px !important;
 
 	opacity: 1 !important;
 
@@ -167,10 +170,13 @@ ul, ol, div, p {
 .reveal section:last-of-type {
 	page-break-after: avoid !important;
 }
-.reveal section img {
-	display: block;
-	margin: 15px 0px;
-	background: rgba(255,255,255,1);
-	border: 1px solid #666;
-	box-shadow: none;
+.reveal section:after {
+  content: "";
+  display: table;
+  clear: both;
 }
+
+.reveal section img.full {
+	max-height: 75%;
+}
+
